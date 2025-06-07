@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saloon de Rhodes</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1 class="titre">Saloon de Rhodes</h1>
+    <p class="intro">
+      Bienvenue à notre honorable établissement situé au cœur de Rhodes.  
+      Ici, chaque nouvel employé est accueilli avec respect, un verre frais et un sourire chaleureux.  
+      Veuillez remplir le registre ci-dessous pour être officiellement ajouté à notre grande famille du Saloon.
+    </p>
+
+    <form id="pigeonForm">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" required>
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" required>
+
+      <label for="numero">Numéro de pigeon :</label>
+      <input type="text" id="numero" pattern="^[0-9]{3}[A-Z]{3}$" placeholder="Ex: 600YKR" required>
+      <small style="color: #6b4e31;">Format attendu : 3 chiffres + 3 lettres majuscules</small>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
